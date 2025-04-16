@@ -278,3 +278,73 @@ section {
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    header nav ul {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    section .caixa-lista .caixa-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        inset: 0;
+    }
+
+    section .caixa-lista .caixa-item .caixa-imagem {
+        position: relative;
+        transform: none;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    section .caixa-lista .caixa-item .conteudo {
+        position: relative;
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        right: 0;
+    }
+
+    section .caixa-lista .caixa-item .conteudo .descricao {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .caixa-setas {
+        width: 100%;
+        padding: 0 20px;
+        top: 90%;
+    }
+
+    .caixa-indicadores {
+        top: 95%;
+        transform: translate(-50%, 0);
+        height: auto;
+        align-items: center;
+    }
+
+    .caixa-indicadores .numeros {
+        font-size: 2em;
+    }
+
+    .caixa-indicadores ul li {
+        width: 30px;
+    }
+
+    body {
+        overflow: auto;
+    }
+}
+
